@@ -1,0 +1,20 @@
+<!doctype html>
+<h2><em>Here is our all types of catagory</em></h2>
+<div class="container text-center">
+    <div class="row">
+      <div class="col-xl-6 col-lg-12 col-sm-12 ac" *ngFor="let a of arr[0].product">
+        <div class="card">
+            <img src={{a.productAll[0].image}} class="card-img-top" alt="..." height="350px">
+            <div class="card-body card">
+              <h5 class="card-title">{{a.pname}}</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a routerLink="/{{arr[0].id}}/{{a.pid}}" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <app-footer></app-footer>
+  <router-outlet></router-outlet>
+  

@@ -1,0 +1,19 @@
+.card-body{
+    height: 350px;
+    border: radius 100px;
+}
+.card{
+    background-color:#ECD811;
+    box-shadow:3px 3px 3px 1px #EC6B11;
+    margin-bottom:50px;
+    margin:auto;
+    width:60%;
+    margin-top:40px;
+}
+.img-fluid{
+    height: 400px;
+    width:450px;
+}
+.card-text{
+    font-size: 18px;
+}

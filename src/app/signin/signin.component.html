@@ -1,0 +1,15 @@
+<!doctype html>
+<div class="form2">
+    <h2>Fill LogIn form</h2>
+    <div class="form1">
+    <form #addform="ngForm" (ngSubmit)="submitData(addform)" autocomplete="off">
+        <label for="email">Email</label>
+        <input type="email" name="email" ngModel #email="ngModel">
+        <label for="password">Password</label>
+        <input type="password" name="password" ngModel #password="ngModel">
+        <button>Submit</button>
+    </form>
+    </div>
+    </div>
+    <br><br>
+    <app-footer></app-footer>

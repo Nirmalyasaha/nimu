@@ -1,0 +1,48 @@
+<!doctype html>
+<br>
+  <button class="btn btn-primary a1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    Setup your budget
+  </button>
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium.
+      </div>
+      <div class="dropdown mt-3">
+        <select (change)="getSelectedValue($event)">
+            <option value="none" selected>Select price</option>
+            <option *ngFor="let a1 of arr1">{{a1}}</option>
+        </select>
+      </div>
+      <button class="btn btn-secondary" type="button" (click)="finalize()">
+        Apply price
+      </button>
+    </div>
+  </div>
+  <div class="input-group mb-3">
+  <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" [(ngModel)]="searchT">
+  </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-xl-4 col-lg-6 col-sm-12 ac" *ngFor="let a of arr2 | custom:searchT">
+        <div class="card" style="width: 18rem;">
+            <img src={{a.image}} class="card-img-top" alt="..." height="350px">
+            <div class="card-body">
+              <h5 class="card-title">{{a.name1}}</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <h5>RS:{{a.price}}/-</h5>
+              <a routerLink="/{{id}}/{{pid}}/{{a.name1}}" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <app-footer></app-footer>
+  <router-outlet></router-outlet>
+  

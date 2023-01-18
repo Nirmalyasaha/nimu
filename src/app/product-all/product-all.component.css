@@ -1,0 +1,47 @@
+.card-body{
+    height: 200px;
+    border: radius 100px;
+}
+.container{
+    width:70%;
+    margin-top:40px;
+}
+h2{
+    margin: 10px auto;
+    width:37%;
+    font-size: 35px;
+}
+.card{
+    background-color:#ECD811;
+    box-shadow:3px 3px 3px 1px #EC6B11;
+    margin-bottom:50px;
+}
+.mb-3{
+    width:65%;
+    margin: auto;
+}
+.form-control{
+    font-size: 25px;
+    border:2px solid black;
+}
+.offcanvas{
+  background-color: #ECD811;  
+}
+.btn-secondary{
+    background-color: #0D9AE1;
+    width:30%;
+    margin-left:80px;
+    margin-top:20px;
+}
+.mt-3{
+    width:170px;
+    margin:auto;
+    width:55%;
+}
+.offcanvas-body{
+    font-size:19px;
+}
+.a1{
+    margin-left:600px;
+}
+

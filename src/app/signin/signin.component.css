@@ -1,0 +1,46 @@
+.form1{
+    margin:auto;
+    width:25%;
+    padding-top: 20px;
+}
+
+input{
+    display:flex;
+    flex-direction:row;
+    width:200px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+}
+h1{
+    margin: auto;
+    width:20%;
+}
+.form2{
+    background-image: linear-gradient(to right,#A02911,#EB830D,#E2EC0B);
+    margin: auto;
+    width: 30%;
+    padding-right:75px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border:2px solid white;
+    border-radius: 10px;
+}
+label{
+    font-size: 20px;
+    font-weight:400;
+}
+h2{
+    margin: auto;
+    width:25%;
+}
+button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width:180px;
+    border:2px solid white;
+    border-radius: 10px;
+}

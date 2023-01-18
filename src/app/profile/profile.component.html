@@ -1,0 +1,22 @@
+<!doctype html>
+    <div class="a">
+          <h3>Profile details</h3>
+          <p>First Name:-{{obj.first_name}}</p>
+          <p>Last Name:-{{obj.last_name}}</p>
+          <p>Email:-{{obj.email}}</p>
+    </div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Price</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let a of obj1">
+        <td>{{a.Pname}}</td>
+        <td>Rs:{{a.Pprice}}/-</td>
+    </tr>
+</tbody>
+</table>
+<app-footer></app-footer>

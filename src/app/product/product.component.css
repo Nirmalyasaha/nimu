@@ -1,0 +1,21 @@
+.card-body{
+    height: 180px;
+    border: radius 100px;
+}
+.container{
+    margin:auto;
+    width:60%;
+    margin-top:40px;
+}
+h2{
+    margin: 10px auto;
+    width:37%;
+    font-size: 35px;
+}
+.card{
+    background-color:#ECD811;
+    box-shadow:3px 3px 3px 1px #EC6B11;
+}
+.ac{
+    width:400px;
+}

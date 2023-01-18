@@ -1,0 +1,20 @@
+<!doctype html>
+<br>
+<a routerLink="/order"><h3>See the cart</h3></a>
+<br>
+<div class="card mb-3" style="max-width:1050px;">
+    <div class="row g-0">
+      <div class="col-md-7">
+        <img src={{arr2.image}} class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-5">
+        <div class="card-body">
+          <h3 class="card-title">{{arr2.name1}}</h3>
+          <h4 class="card-title">RS{{arr2.price}}/-</h4>
+          <p class="card-text">{{arr2.description}}</p>
+           <button (click)="doOrder()">Order Now</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer1></app-footer1>
